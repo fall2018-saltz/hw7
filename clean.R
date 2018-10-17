@@ -22,3 +22,6 @@ state.name
 
 final_data$area<-state.area
 final_data
+
+state_center= data.frame(state.center)
+state_center
