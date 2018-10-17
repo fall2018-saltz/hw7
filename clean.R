@@ -49,14 +49,12 @@ murder_map<-murder_map + expand_limits(x=US$long, y=US$lat)
 murder_map
 
 
-final_data$longitude = as.numeric(as.character(final_data$longitude))
-final_data$latitude = as.numeric(as.character(final_data$latitude))
-population_bubble<-ggplot() + geom_map(map=US, x=final_data$longitude,y=final_data$latitude)
+population_bubble<-  geom_polygon(data =US, aes(x=final_data$longitude, y = final_data$latitude), fill="grey", alpha=0.3) +
+  geom_point(final_data, aes(x=final_data$longitude, y=final_data$latitude)) +
+  theme_void() + ylim(50,59) + coord_map() 
+
 
 population_bubble
-
-
-
 
 
 
