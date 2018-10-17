@@ -29,4 +29,4 @@ final_data$longitude<- state_center$x
 final_data$latitude<- state_center$y
 final_data
 
-final_data$stateName=tolower(final_data$stateName)
+final_data$stateName<-tolower(final_data$stateName)
