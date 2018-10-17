@@ -24,6 +24,7 @@ state.name
 final_data$area<-state.area
 final_data
 
+# Finding the latitude and longitude coordinates and adding them to the merged data set.
 state_center= data.frame(state.center)
 state_center
 final_data$longitude<- state_center$x
@@ -33,7 +34,7 @@ final_data
 final_data$stateName<-tolower(final_data$stateName)
 final_data
 
-US=map_data("state")
+US<-map_data("state")
 
 area_map<-ggplot(final_data, aes(map_id=stateName)) + geom_map(map=US, aes(fill="blue"),color="black")
 area_map
