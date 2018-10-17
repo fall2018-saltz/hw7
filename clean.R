@@ -31,7 +31,7 @@ final_data$longitude<- state_center$x
 final_data$latitude<- state_center$y
 final_data
 
-# ggplot expects the state names to be in lower case. (In the book "Introduction to data science.")
+# ggplot expects the state names to be in lower case. (In the book "Introduction to Data Science.")
 final_data$stateName<-tolower(final_data$stateName)
 final_data
 
