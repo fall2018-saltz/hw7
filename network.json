@@ -17,7 +17,7 @@
         {
             "ports": [
                 {
-                    "output": "clean_data",
+                    "output": "final_data",
                     "type": "csv"
                 }
             ],
@@ -38,6 +38,6 @@
             "name": "data.csv"
         }
     ],
-    "updated_at": "2018-10-17 15:12:29",
+    "updated_at": "2018-10-17 15:41:45",
     "url": "https://github.com/fall2018-saltz/hw7"
 }
