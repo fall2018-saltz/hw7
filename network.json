@@ -13,16 +13,6 @@
             ],
             "source": "scprc_est_2017_18_pop_res.csv",
             "target": "clean.R"
-        },
-        {
-            "ports": [
-                {
-                    "output": "area_map",
-                    "type": "png"
-                }
-            ],
-            "source": "clean.R",
-            "target": "AreaMap.png"
         }
     ],
     "nodes": [
@@ -38,6 +28,6 @@
             "name": "AreaMap.png"
         }
     ],
-    "updated_at": "2018-10-17 15:45:39",
+    "updated_at": "2018-10-17 16:01:20",
     "url": "https://github.com/fall2018-saltz/hw7"
 }
