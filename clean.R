@@ -16,3 +16,5 @@ final_data
 
 library(ggplot2)
 library(ggmap)
+
+state.area
