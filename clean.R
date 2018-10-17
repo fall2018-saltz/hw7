@@ -18,6 +18,7 @@ final_data
 library(ggplot2)
 library(ggmap)
 
+# In built parameters in ggmap
 state.area
 state.name
 
