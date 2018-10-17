@@ -18,4 +18,4 @@ library(ggplot2)
 library(ggmap)
 
 state.area
-state.stateName
+state.name
