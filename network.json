@@ -13,16 +13,6 @@
             ],
             "source": "scprc_est_2017_18_pop_res.csv",
             "target": "clean.R"
-        },
-        {
-            "ports": [
-                {
-                    "output": "final_data",
-                    "type": "csv"
-                }
-            ],
-            "source": "clean.R",
-            "target": "data.csv"
         }
     ],
     "nodes": [
@@ -33,11 +23,8 @@
             "assigned_to": "agarge",
             "name": "clean.R",
             "task_status": "in progress"
-        },
-        {
-            "name": "data.csv"
         }
     ],
-    "updated_at": "2018-10-17 15:41:45",
+    "updated_at": "2018-10-17 15:42:30",
     "url": "https://github.com/fall2018-saltz/hw7"
 }
