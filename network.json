@@ -36,8 +36,11 @@
         },
         {
             "name": "AreaMap.png"
+        },
+        {
+            "name": "MurderMap.png"
         }
     ],
-    "updated_at": "2018-10-17 16:01:54",
+    "updated_at": "2018-10-17 16:47:10",
     "url": "https://github.com/fall2018-saltz/hw7"
 }
