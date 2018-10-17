@@ -33,6 +33,16 @@
             ],
             "source": "clean.R",
             "target": "MurderMap.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "population_bubble",
+                    "type": "png"
+                }
+            ],
+            "source": "clean.R",
+            "target": "PopulationBubble.png"
         }
     ],
     "nodes": [
@@ -54,6 +64,6 @@
             "name": "PopulationBubble.png"
         }
     ],
-    "updated_at": "2018-10-17 17:47:02",
+    "updated_at": "2018-10-17 17:47:17",
     "url": "https://github.com/fall2018-saltz/hw7"
 }
