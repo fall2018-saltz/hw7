@@ -50,6 +50,7 @@ murder_map
 
 
 New_York_long<-final_data[32,10]
+New_York_lat<-final_data[32,11]
 New_York_long
 
 
