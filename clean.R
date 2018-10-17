@@ -49,7 +49,7 @@ murder_map<-murder_map + expand_limits(x=US$long, y=US$lat)
 murder_map
 
 
-population_bubble<-  geom_polygon(US, aes(x=final_data$longitude, y = final_data$latitude), fill="grey", alpha=0.3) +
+population_bubble<-  geom_polygon(map=US, aes(x=final_data$longitude, y = final_data$latitude), fill="grey", alpha=0.3) +
   geom_point(final_data, aes(x=final_data$longitude, y=final_data$latitude)) +
   theme_void() + ylim(50,59) + coord_map() 
 
