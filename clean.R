@@ -50,6 +50,7 @@ murder_map
 
 
 final_data$longitude = as.numeric(as.character(final_data$longitude))
+final_data$latitude = as.numeric(as.character(final_data$latitude))
 population_bubble<-ggplot() + geom_map(map=US, x=final_data$longitude,y=final_data$latitude)
 
 population_bubble
