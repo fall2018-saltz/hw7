@@ -11,3 +11,4 @@ colnames(arrests) <- c("stateName")
 arrests
 
 final_data<-merge(raw_data,arrests)
+final_data
