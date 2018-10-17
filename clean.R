@@ -19,3 +19,5 @@ library(ggmap)
 
 state.area
 state.name
+
+final_data$area<-state.area
