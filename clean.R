@@ -36,6 +36,7 @@ final_data
 final_data$stateName<-tolower(final_data$stateName)
 final_data
 
+# Generating US map as per state names.
 US<-map_data("state")
 
 area_map<-ggplot(final_data, aes(map_id=stateName)) + geom_map(map=US, aes(fill=area),color="blue")
