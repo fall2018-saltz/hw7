@@ -23,6 +23,16 @@
             ],
             "source": "clean.R",
             "target": "AreaMap.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "murder_map",
+                    "type": "png"
+                }
+            ],
+            "source": "clean.R",
+            "target": "MurderMap.png"
         }
     ],
     "nodes": [
@@ -41,6 +51,6 @@
             "name": "MurderMap.png"
         }
     ],
-    "updated_at": "2018-10-17 16:47:10",
+    "updated_at": "2018-10-17 16:47:21",
     "url": "https://github.com/fall2018-saltz/hw7"
 }
