@@ -20,6 +20,7 @@ library(ggmap)
 state.area
 state.name
 
+# Using state.area to create a new column in the merged data set.
 final_data$area<-state.area
 final_data
 
