@@ -23,8 +23,11 @@
             "assigned_to": "agarge",
             "name": "clean.R",
             "task_status": "in progress"
+        },
+        {
+            "name": "AreaMap.png"
         }
     ],
-    "updated_at": "2018-10-17 15:42:30",
+    "updated_at": "2018-10-17 15:43:02",
     "url": "https://github.com/fall2018-saltz/hw7"
 }
