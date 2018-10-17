@@ -6,4 +6,5 @@ colnames(raw_data) <- c("stateName","population","popOver18","percentOver18")
 raw_data
 
 arrests<-USArrests
+arrests <- cbind(rownames(arrests),arrests)
 arrests
