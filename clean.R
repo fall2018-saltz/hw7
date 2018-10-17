@@ -33,3 +33,4 @@ final_data$stateName<-tolower(final_data$stateName)
 final_data
 
 US=map_data("state")
+US
