@@ -13,3 +13,5 @@ arrests
 final_data<-merge(raw_data,arrests)
 colnames(final_data) <- c("stateName","population","popOver18","percentOver18","Murder","Assault","UrbanPop","Rape")
 final_data
+
+library(ggplot2)
