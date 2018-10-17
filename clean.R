@@ -63,3 +63,4 @@ population_bubble<-ggplot(final_data,aes(map_id=stateName)) + geom_point(map=US,
 
 
 
+
