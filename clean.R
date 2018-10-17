@@ -24,6 +24,7 @@ final_data$area<-state.area
 final_data
 
 state_center= data.frame(state.center)
+state_center
 final_data$longitude<- state_center$x
 final_data$latitude<- state_center$y
-state_center
+final_data
