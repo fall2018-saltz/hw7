@@ -31,11 +31,12 @@ final_data$longitude<- state_center$x
 final_data$latitude<- state_center$y
 final_data
 
+# ggplot expects the state names to be in lower case. (In the book "Introduction to data science.")
 final_data$stateName<-tolower(final_data$stateName)
 final_data
 
 US<-map_data("state")
 
-area_map<-ggplot(final_data, aes(map_id=stateName)) + geom_map(map=US, aes(fill="blue"),color="black")
+area_map<-ggplot(final_data, aes(map_id=stateName)) + geom_map(map=US, aes(fill=area),color="black")
 area_map
-#area_map<-states + expand_limits(x=US$long, y=US$lat)
+#
