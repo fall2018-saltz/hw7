@@ -49,6 +49,7 @@ murder_map<-murder_map + expand_limits(x=US$long, y=US$lat)
 murder_map
 
 population_bubble<-ggplot(final_data)+geom_point(aes(size =population))
+population_bubble
 
 
 
