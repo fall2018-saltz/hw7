@@ -38,5 +38,6 @@ final_data
 US<-map_data("state")
 
 area_map<-ggplot(final_data, aes(map_id=stateName)) + geom_map(map=US, aes(fill=area),color="black")
+area_map<-states + expand_limits(x=US$long, y=US$lat)
 area_map
-#
+
