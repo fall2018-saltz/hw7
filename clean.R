@@ -21,3 +21,4 @@ state.area
 state.name
 
 final_data$area<-state.area
+final_data
