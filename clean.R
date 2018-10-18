@@ -48,20 +48,16 @@ murder_map<- ggplot(final_data,aes(map_id=stateName))+ geom_map(map=US,aes(fill=
 murder_map<-murder_map + expand_limits(x=US$long, y=US$lat)
 murder_map
 
-
-New_York_long<-final_data[32,10]
-New_York_lat<-final_data[32,11]
-
 population_bubble<-ggplot(final_data,aes(map_id=stateName))+geom_map(map=US,aes(fill=Murder),color="blue")
 population_bubble<-population_bubble+expand_limits(x=US$long,y=US$lat)
 population_bubble<- population_bubble + geom_point(aes(x=final_data$longitude, y=final_data$latitude, size=final_data$population)) + coord_map()
 population_bubble<-population_bubble + ggtitle("Population Bubble Chart")
 population_bubble
 
-northeast_murder=  murder_map+ xlim(-83.93, -63.93) + ylim(30.73, 50.73)
+northeast_murder<- murder_map+ xlim(-83.93, -63.93) + ylim(30.73, 50.73)
 northeast_murder
 
-northeast_population= population_bubble + xlim(-83.93, -63.93) + ylim(30.73, 50.73)
+northeast_population<-population_bubble + xlim(-83.93, -63.93) + ylim(30.73, 50.73)
 northeast_population
 
 
