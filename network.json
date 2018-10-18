@@ -53,6 +53,16 @@
             ],
             "source": "clean.R",
             "target": "NortheastMurder.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "northeast_population",
+                    "type": "png"
+                }
+            ],
+            "source": "clean.R",
+            "target": "NortheastPopulation.png"
         }
     ],
     "nodes": [
@@ -80,6 +90,6 @@
             "name": "NortheastPopulation.png"
         }
     ],
-    "updated_at": "2018-10-18 03:28:09",
+    "updated_at": "2018-10-18 03:28:25",
     "url": "https://github.com/fall2018-saltz/hw7"
 }
