@@ -1,4 +1,14 @@
 
+############################################
+#IST 687- Introduction to Data Science
+# Due date - 10/18/2018 by 11:59 p.m.
+# Homework 7 (Maps)
+# Submitted by- Aniruddh Garge
+# SUID- 863559754
+# Submitted on- 10/17/2018
+# Portions of this code came from Introduction to Data Science and Internet
+# Comments are all original.
+
 # Cleaning the data set given and renaming the columns.
 raw_data<-raw_data[,-1:-4]
 raw_data<-raw_data[-c(1,53,10),]
@@ -40,28 +50,29 @@ final_data
 # Generating US map as per state names.
 US<-map_data("state")
 
+# Color coded map based on area of the state
 area_map<-ggplot(final_data, aes(map_id=stateName)) + geom_map(map=US, aes(fill=area),color="blue")
 area_map<- area_map + expand_limits(x=US$long, y=US$lat)
 area_map
 
+# Generating a map based on murder rate in every state.
 murder_map<- ggplot(final_data,aes(map_id=stateName))+ geom_map(map=US,aes(fill=Murder),color="yellow")
 murder_map<-murder_map + expand_limits(x=US$long, y=US$lat)
 murder_map
 
-
-New_York_long<-final_data[32,10]
-New_York_lat<-final_data[32,11]
-
+# Generating a bubble chart on map which shows murder rate on map and population as a bubble on the map.
 population_bubble<-ggplot(final_data,aes(map_id=stateName))+geom_map(map=US,aes(fill=Murder),color="blue")
 population_bubble<-population_bubble+expand_limits(x=US$long,y=US$lat)
 population_bubble<- population_bubble + geom_point(aes(x=final_data$longitude, y=final_data$latitude, size=final_data$population)) + coord_map()
 population_bubble<-population_bubble + ggtitle("Population Bubble Chart")
 population_bubble
 
-northeast_murder=  murder_map+ xlim(-83.93, -63.93) + ylim(30.73, 50.73)
+# Showing the murder rate only for the northeast states.
+northeast_murder<- murder_map+ xlim(-83.93, -63.93) + ylim(30.73, 50.73)
 northeast_murder
 
-northeast_population= population_bubble + xlim(-83.93, -63.93) + ylim(30.73, 50.73)
+# Showing the above generated bubble chart for northeast states.
+northeast_population<-population_bubble + xlim(-83.93, -63.93) + ylim(30.73, 50.73)
 northeast_population
 
 
