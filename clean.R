@@ -1,16 +1,13 @@
 
 ############################################
 #IST 687- Introduction to Data Science
-# Due date - 10/18/18 by 11:59 p.m.
+# Due date - 10/18/2018 by 11:59 p.m.
 # Homework 7 (Maps)
 # Submitted by- Aniruddh Garge
 # SUID- 863559754
-# Portions of this code came from Introduction to Data Science
-# but the comments are all original.
-
-
-
-
+# Submitted on- 10/17/2018
+# Portions of this code came from Introduction to Data Science and Internet
+# Comments are all original.
 
 # Cleaning the data set given and renaming the columns.
 raw_data<-raw_data[,-1:-4]
