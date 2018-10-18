@@ -1,4 +1,14 @@
 
+#IST 687- Introduction to Data Science
+# Due date - 10/10/18 by 11:59 p.m.
+# Homework 7:Maps- Submitted by Simaant Jayant Patil on 10//18
+# Portions of this code came from Introduction to Data Science
+# but the comments are all original.
+
+
+
+
+
 # Cleaning the data set given and renaming the columns.
 raw_data<-raw_data[,-1:-4]
 raw_data<-raw_data[-c(1,53,10),]
