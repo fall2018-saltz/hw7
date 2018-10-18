@@ -57,6 +57,7 @@ population_bubble<- population_bubble + geom_point(aes(x=final_data$longitude, y
 population_bubble<-population_bubble + ggtitle("Population Bubble Chart")
 population_bubble
 
+# Showing the murder rate only for the northeast states.
 northeast_murder<- murder_map+ xlim(-83.93, -63.93) + ylim(30.73, 50.73)
 northeast_murder
 
