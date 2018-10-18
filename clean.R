@@ -56,8 +56,7 @@ population_bubble<-ggplot(final_data,aes(map_id=stateName))+geom_map(map=US,aes(
 population_bubble<-population_bubble+expand_limits(x=US$long,y=US$lat)
 population_bubble<- population_bubble + geom_point(aes(x=final_data$longitude, y=final_data$latitude, size=final_data$population)) + coord_map()
 population_bubble<-population_bubble + ggtitle("Population Bubble Chart")
-
-
+population_bubble
 
 
 
