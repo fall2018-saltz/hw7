@@ -75,8 +75,11 @@
         },
         {
             "name": "NortheastMurder.png"
+        },
+        {
+            "name": "NortheastPopulation.png"
         }
     ],
-    "updated_at": "2018-10-18 03:27:27",
+    "updated_at": "2018-10-18 03:28:09",
     "url": "https://github.com/fall2018-saltz/hw7"
 }
