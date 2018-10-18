@@ -52,13 +52,7 @@ murder_map
 New_York_long<-final_data[32,10]
 New_York_lat<-final_data[32,11]
 
-population_bubble<- ggplot(final_data,aes(x=x,y=y,map_id= stateName,size=population))+ geom_map(map=US,fill='blue',color='yellow',size=0.5)+
-                expand_limits(x=final_data$longitude,y=final_data$latitude)+
-                coord_map()+
-                geom_point()+
-                ggtitle('map of usa based on population')
-
-population_bubble
+population_bubble<-ggplot(final_data,aes(map_id=stateName))+geom_map(map=US,aes(fill=Murder),color="blue")
 
 
 
