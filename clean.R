@@ -40,6 +40,7 @@ final_data
 # Generating US map as per state names.
 US<-map_data("state")
 
+# Color coded map based on area of the state
 area_map<-ggplot(final_data, aes(map_id=stateName)) + geom_map(map=US, aes(fill=area),color="blue")
 area_map<- area_map + expand_limits(x=US$long, y=US$lat)
 area_map
