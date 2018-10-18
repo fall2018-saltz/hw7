@@ -61,6 +61,7 @@ population_bubble
 northeast_murder<- murder_map+ xlim(-83.93, -63.93) + ylim(30.73, 50.73)
 northeast_murder
 
+# Showing the above generated bubble chart for northeast states.
 northeast_population<-population_bubble + xlim(-83.93, -63.93) + ylim(30.73, 50.73)
 northeast_population
 
